@@ -65,6 +65,9 @@ class Router
                      case 'fetch':
                         $this->controller->read();
                         break;
+                    case 'rows':
+                            $this->controller->rows();
+                        break;
                     case 'createTable':
                         $this->controller->createTable();
                         break;
@@ -73,6 +76,12 @@ class Router
                         break;
                     case 'tableList':
                         $this->controller->tableListUsingAjax();
+                        break;
+                    case 'columnList':
+                        $this->controller->columnListUsingAjax();
+                        break;
+                    case 'store':
+                        $this->controller->insertData();
                         break;
                 }
             }

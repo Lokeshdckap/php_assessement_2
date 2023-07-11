@@ -12,23 +12,21 @@ $router->get('/','dbView');
 
 $router->post('/dbCreate','create');
 
-// $router->post('/store','create');
-
-// $router->post('/edit','edit');
 
 $router->get('/list','fetch');
 
 $router->get('/createTable','createTable');
+
 $router->post('/createColumns','createColumns');
 
 $router->get('/tableList','tableList');
 
-// createColumns
+$router->get('/columnList','columnList');
 
+$router->get('/addRows','rows');
 
-// $router->put('/update','update');
+$router->post('/insertData','store');
 
-// $router->delete('/delete','delete');
 
 $router->routes($_SERVER['REQUEST_URI']);
 ?>
